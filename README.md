@@ -1,7 +1,13 @@
 # ACI – Custom Items + Texturen + Rezepte (Paper 1.21.4+)
 
 ## Bauen
-Java 21 + Maven: `mvn package` → `target/ACI-1.0.0.jar` in den `plugins/`-Ordner legen.
+Lokal mit Java 21 + Maven: `mvn package` → `target/ACI-1.0.0.jar` in den `plugins/`-Ordner legen.
+
+Über GitHub (ohne lokale Installation):
+1. Projekt in ein GitHub-Repository pushen.
+2. Reiter **Actions** → „Build ACI“ läuft automatisch bei jedem Push (oder per „Run workflow“).
+3. Fertige Jar: im Lauf unter **Artifacts** → `ACI-plugin`.
+4. Für ein Release: Tag setzen (`git tag v1.0.0 && git push --tags`), die Jar hängt dann am Release.
 
 ## Befehle
 - `/aci` – Admin-Menü (Items erstellen, Textur, Name, Lore, Effekte, Rezepte)
